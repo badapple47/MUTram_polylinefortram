@@ -17,6 +17,7 @@ struct marker{
 }
 
 var routing = "green"
+var routingColor : UIColor = UIColor.blue
 
 class ViewController: UIViewController, MKMapViewDelegate {
     
@@ -149,25 +150,7 @@ class ViewController: UIViewController, MKMapViewDelegate {
         
         zoomToRegion()
         
-        let annotations = getMapAnnotations()
-        
-        // Add mappoints to Map
-//        mapView.addAnnotations(annotations)
-        
-        mapView.delegate = self
-        
-        // Connect all the mappoints using Poly line.
-        
-        var points: [CLLocationCoordinate2D] = [CLLocationCoordinate2D]()
-        
-        for annotation in annotations {
-            points.append(annotation.coordinate)
-        }
-        
-        
-        let polyline = MKPolyline(coordinates: &points, count: points.count)
-        
-        mapView.add(polyline)
+  
         
 //        13.793654, 100.321483
         addPinToMap()
@@ -270,7 +253,7 @@ class ViewController: UIViewController, MKMapViewDelegate {
         let polylineRenderer = MKPolylineRenderer(overlay: overlay)
         
         if overlay is MKPolyline {
-            polylineRenderer.strokeColor = UIColor.blue
+            polylineRenderer.strokeColor = routingColor
             polylineRenderer.lineWidth = 5
 
         }
@@ -287,9 +270,110 @@ class ViewController: UIViewController, MKMapViewDelegate {
 
         
     }
-    @IBAction func testBtn(_ sender: Any) {
+
+    @IBAction func yellowBtn(_ sender: Any) {
         
-        print("helloworld")
+        print("hello Yellow")
+        routing = "yellow"
+        routingColor = UIColor.yellow
+        let annotations = getMapAnnotations()
+        
+        // Add mappoints to Map
+        //        mapView.addAnnotations(annotations)
+        
+        mapView.delegate = self
+        
+        // Connect all the mappoints using Poly line.
+        
+        var points: [CLLocationCoordinate2D] = [CLLocationCoordinate2D]()
+        
+        for annotation in annotations {
+            points.append(annotation.coordinate)
+        }
+        
+        
+        let polyline = MKPolyline(coordinates: &points, count: points.count)
+        
+        mapView.add(polyline)
+        
     }
+    
+    @IBAction func blueBtn(_ sender: Any) {
+        
+        print("hello Yellow")
+        routing = "blue"
+        routingColor = UIColor.blue
+        let annotations = getMapAnnotations()
+        
+        // Add mappoints to Map
+        //        mapView.addAnnotations(annotations)
+        
+        mapView.delegate = self
+        
+        // Connect all the mappoints using Poly line.
+        
+        var points: [CLLocationCoordinate2D] = [CLLocationCoordinate2D]()
+        
+        for annotation in annotations {
+            points.append(annotation.coordinate)
+        }
+        
+        
+        let polyline = MKPolyline(coordinates: &points, count: points.count)
+        
+        mapView.add(polyline)
+        
+    }
+    
+    @IBAction func redBtn(_ sender: Any) {
+        print("hello Yellow")
+        routing = "red"
+        routingColor = UIColor.red
+        let annotations = getMapAnnotations()
+        
+        // Add mappoints to Map
+        //        mapView.addAnnotations(annotations)
+        
+        mapView.delegate = self
+        
+        // Connect all the mappoints using Poly line.
+        
+        var points: [CLLocationCoordinate2D] = [CLLocationCoordinate2D]()
+        
+        for annotation in annotations {
+            points.append(annotation.coordinate)
+        }
+        
+        
+        let polyline = MKPolyline(coordinates: &points, count: points.count)
+        
+        mapView.add(polyline)
+    }
+    
+    @IBAction func greenBtn(_ sender: Any) {
+        print("hello Yellow")
+        routing = "green"
+        routingColor = UIColor.green
+        let annotations = getMapAnnotations()
+        
+        // Add mappoints to Map
+        //        mapView.addAnnotations(annotations)
+        
+        mapView.delegate = self
+        
+        // Connect all the mappoints using Poly line.
+        
+        var points: [CLLocationCoordinate2D] = [CLLocationCoordinate2D]()
+        
+        for annotation in annotations {
+            points.append(annotation.coordinate)
+        }
+        
+        
+        let polyline = MKPolyline(coordinates: &points, count: points.count)
+        
+        mapView.add(polyline)
+    }
+    
 }
 

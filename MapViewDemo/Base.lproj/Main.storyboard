@@ -22,11 +22,45 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </mapView>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="HIA-LP-9CU">
-                                <rect key="frame" x="137" y="504" width="46" height="30"/>
+                                <rect key="frame" x="28" y="504" width="46" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.66925299657534243" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="yellow">
+                                    <color key="titleColor" red="1" green="0.80000001190000003" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
                                 <connections>
-                                    <action selector="testBtn:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="JvE-zv-NS4"/>
+                                    <action selector="yellowBtn:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="3If-U3-JKU"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="WKs-An-6oH">
+                                <rect key="frame" x="108" y="504" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.66443707191780821" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="blue"/>
+                                <connections>
+                                    <action selector="blueBtn:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="ubl-qc-GOX"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="APz-f8-laV">
+                                <rect key="frame" x="184" y="504" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.673828125" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="red">
+                                    <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="redBtn:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="0Fd-zK-y2d"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Rio-gd-fMg">
+                                <rect key="frame" x="248" y="504" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.66657748287671237" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="green">
+                                    <color key="titleColor" red="0.0" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="greenBtn:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="jYE-pY-itj"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -38,7 +72,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="130.66666666666666" y="307.66666666666669"/>
+            <point key="canvasLocation" x="-179" y="205"/>
         </scene>
     </scenes>
 </document>
